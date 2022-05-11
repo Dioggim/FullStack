@@ -1,0 +1,38 @@
+h1{
+    color: orangered;
+    border-color: gray;
+    border-width: 2px;
+    border-style: solid;
+}
+/* a formatação da borda h1 pode ser substituida por uma unica linha conforme abaixo */
+h4{ 
+    color: goldenrod;
+    border: 2px gray solid;
+}
+li{
+    color: palevioletred;
+}
+body{
+    background-image:url('https://faeces.com.br/wp-content/uploads/2018/08/money-site-x-pbn-fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.small-text{
+    color: blueviolet;
+    font-size: 15px;
+}
+.middle-text{
+    color: blue;
+    font-size: 20px;
+}
+.big-text{
+    color:rgb(245, 69, 0);
+    font-size: 30px;
+}
+/* para relacionar com ID conforme está no arquivo jupiter, podemos usar # para fazer a personalização, conforme abaixo. */
+#europa-text{
+font-size: 70px;
+color: rgb(12, 13, 15);
+
+}

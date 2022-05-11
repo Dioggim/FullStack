@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ExercicioForm</title>
+</head>
+<body>
+    <div>
+    <h2>Cadastro da liga dos astronautas</h2>
+    <form action="">
+        <label for="lname">Nome:</label>
+        <input type="text" id="lname" name="lname"><br>
+    </div>
+    <br>
+    <div>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email"> -
+        <label for="pwd">Senha:</label>
+        <input type="password" id="pwd" name ="pwd">
+    </div>
+    <br>
+    <div>
+        <label for="birthdate">Data de nascimento:</label>
+        <input type="date" id="birthdate" name ="birthdate"> -
+        <label for="arq"> Selecione um foto: </label>
+        <input type="file" id="arq" name ="arq"><br><br>
+    </div>
+    <br>
+    <div>        
+        <label for="nascionalidade"> Nascionalidade:</label>
+        <select name="nascionalidade" id="nascionalidade">
+            <option value="Russo">Russo</option>
+            <option value="Brasileiro">Brasileiro</option>
+            <option value="Indiano">Indiano</option>
+            <option value="Americano">Americano</option>
+            <option value="Italiano">Italiano</option>
+        </select> - 
+    Genero:       
+        <input type="radio" id="m" name="genero" value="m">
+        <label for="m">M</label>
+        <input type="radio" id="f" name="genero" value="f">
+        <label for="f">F</label>
+    </div>
+    <br>
+    <div>
+    <Strong> Suas principais qualidades:</Strong><br>
+        <input type="checkbox" id="quali1" name="quali1" value="inteligencia">
+        <label for="inteligencia"> Inteligência</label> |
+        <input type="checkbox" id="quali2" name="quali2" value="resiliencia">
+        <label for="resiliencia"> Resiliência</label> |
+        <input type="checkbox" id="quali3" name="quali3" value="preparoFisico">
+        <label for="preparoFisico">Preparo Físico</label> |
+        <input type="checkbox" id="quali4" name="quali4" value="educacao">
+        <label for="educacao">Educação</label>
+    </div>
+    <br>
+    <div>
+        <textarea name="text" id="" cols="30" rows="10" placeholder="Por que você quer ser um astronauta?"></textarea>
+    </div>
+    <input type="button" value="Criar">
+    </form>
+</body>
+</html>

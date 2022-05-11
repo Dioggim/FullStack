@@ -1,0 +1,27 @@
+body{
+    background-color: #2c3e50;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 1.5;
+    
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Geostar', cursive;
+    
+}
+h2{
+    color: black;
+    background-color: yellow;
+    border: 2px black;
+    font-family: 'Water Brush', cursive;
+}
+h3{
+    color:rgba(255, 255, 0, 0.767);
+}
+#astronomy-class{
+    color: red;
+}
