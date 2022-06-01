@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+
+
+    <title>Portifolio Diogo</title>
+</head>
+
+<body>
+    <!-- esta parte é a barra superior do site -->
+    <header>
+        <nav class="navbar is-transparent">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="indexPortifolio.html">
+                    <strong>\O/ Welcome </strong>
+                </a>
+                <div class="navbar-burger" data-target="navbarExampleTransparentExample">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <!-- esta parte é a barra superior -->
+            <div id="navbarExampleTransparentExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="indexPortifolio.html">
+                        Home
+                    </a>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link" href="curriculo.html">
+                            Currículo
+                        </a>
+                        <div class="navbar-dropdown is-boxed">
+                            <a class="navbar-item" href="projetos.html">
+                                Projetos
+                            </a>
+                            <a class="navbar-item" href="hobbies.html">
+                                Hobbies
+                            </a>
+                            <a class="navbar-item" href="contato.html">
+                                Contato
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="field is-grouped">
+                            <p class="control">
+                                <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet"
+                                    data-social-target="https://bulma.io" target="_blank"
+                                    href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms">
+                                    <span class="icon">
+                                        <i class="fab fa-twitter"></i>
+                                    </span>
+                                    <span>
+                                        Tweet
+                                    </span>
+                                </a>
+                            </p>
+                            <p class="control">
+                                <a class="button is-primary"
+                                    href="https://github.com/jgthms/bulma/releases/download/0.9.4/bulma-0.9.4.zip">
+                                    <span class="icon">
+                                        <i class="fas fa-download"></i>
+                                    </span>
+                                    <span>Download</span>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section">
+                    <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
+                <ul>
+                    <li><a href="curriculo.html">Currículo</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="hobbies.html">Hobbies</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <!-- Esta parte é o card com a foto. -->
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-3">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-3by3">
+                                <img src="C:\Users\Diogo\Documents\MeusProjetos\OneBitCode\Bulma\projeto1.html\foto.jpg"
+                                    alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4">Diogo Almeida</p>
+                                    <p class="subtitle is-6"><strong>GitHub - </strong>@dioggim</p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                <span class="tag is-dark"> Desenvolvedor e estudante FullStack JavaScript.</span>
+                                <a href="#">#css</a> <a href="#">#responsive</a>
+                                <br>
+                                <br>
+                                <i class="fa fa-whatsapp" aria-hidden="true">Whatsapp - </i> (11) 98311-3887
+                                <br>
+                                <i class="fa fa-whatsapp" aria-hidden="true">Email - </i> diogo2991@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Esta parte é sobre os cards com informações. -->
+                <div class="column is-9">
+                    <!-- Esta é o primeiro card. -->
+                    <div class="card">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                Contato
+                            </p>
+                            </button>
+                        </header>
+                        <!-- Esta é o segundo card. -->
+                        <div class="field">
+                            <label class="label"> <p class="card-header-title">
+                                Nome
+                            </p></label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Text input">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label"><p class="card-header-title">
+                                E-mail
+                            </p></label>
+                            <div class="control has-icons-left has-icons-right">
+                                <input class="input" type="email" placeholder="Email input" value="">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                                <span class="icon is-small is-right">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label"><p class="card-header-title">
+                                Message
+                            </p></label>
+                            <div class="control">
+                                <textarea class="textarea" placeholder="Textarea"></textarea>
+                            </div>
+                        </div>
+                        <div class="field is-grouped">
+                            <div class="control">
+                                <button class="button is-primary">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+</body>
+
+</html>
