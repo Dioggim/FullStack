@@ -1,39 +1,44 @@
-let spaceShipName = prompt("Digite o nome da Nave: ")
-
-let velocity = 0
-
-let chosenOption = 0
-
-acceleration = 5
-
-function speedUp(velocity, acceleration) {
-    velocity += acceleration
-}
-function speedDown(velocity, acceleration) {
-    velocity -= acceleration
-}
-
-
-
-while (true) {
-
-    chosenOption = prompt("Escolha uma das opções: \n1 - Acelerar a nave em 5 km/s.\n2 - Desacelarar em 5 km/s.\n3 - Imprimir dados de bordo\n4 - Sair do programa")
-
-    if (chosenOption == 1) {
-        velocity += acceleration
-        console.log(velocity)
-    } else if (chosenOption == 2) {
-        if (velocity - 5 >= 0) {
-            velocity -= acceleration
-        } else {
-            alert("Você nao pode colocar a velocidade abaixo de 0 zero, escolha outra opção")
-        }
-    } else if (chosenOption == 3) {
-        alert("Nome da Nave: " + spaceShipName + "\nVelocidade: " + velocity + "km/s")
-    } else if (chosenOption == 4) {
-        break
-    } else {
-        alert("Opção incorreta, escolha uma opção válida.")
+let spaceshipName = prompt("Digite o nome da nave")
+let spaceshipVelocity = 0
+let chosenOption
+function showMenu() {
+    let option
+    while(option != "1" && option != "2" && option != "3" && option != "4") {
+        option = prompt("O que deseja fazer?\n" +
+                        "1- Acelerar a nave em 5km/s\n" +
+                        "2- Desacelerar a nave em 5km/s\n" +
+                        "3- Imprimir dados de bordo\n" +
+                        "4- Sair de programa")
     }
-
+    return option
 }
+function speedUp(velocity) {
+    let newVelocity = velocity + 5
+    return newVelocity
+}
+function slowDown(velocity) {
+    let newVelocity = velocity - 5
+    if(newVelocity < 0) {
+        newVelocity = 0
+    }
+    return newVelocity
+}
+function printSpaceshipBoardData(name, velocity) {
+    alert("Espaçonave: " + name + "\nVelocidade: " + velocity + "km/s")
+}
+do {
+    chosenOption = showMenu()
+    switch(chosenOption) {
+        case "1":
+            spaceshipVelocity = speedUp(spaceshipVelocity)
+            break
+        case "2":
+            spaceshipVelocity = slowDown(spaceshipVelocity)
+            break
+        case "3":
+            printSpaceshipBoardData(spaceshipName, spaceshipVelocity)
+            break
+        default:
+            alert("Encerrando programa de bordo")
+    }
+} while(chosenOption != "4")

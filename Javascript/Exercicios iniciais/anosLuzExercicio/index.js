@@ -16,6 +16,8 @@ switch(unitDistance){
     case "3":
         alert ("A distância em Anos luz escolhida é: " + spaceDistance +"\nA distância" + spaceDistance + "convertida para a opção" + unitDistance + " é: "  + km + "Km")
         break
+    default:
+        alert ("Não digitou uma opção v")
 
 }
 
