@@ -1,0 +1,6 @@
+let list = {
+    
+}
+function Lista () {
+
+}

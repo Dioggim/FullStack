@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Eventos no HTML</title>
+
+</head>
+<body>
+  <p>
+    <button onclick="clickMe()">Clique-me</button>
+  </p>
+  //Aqui no "onfocus" ele chama a funçao quando a pessoa clica no campo.
+  <p>
+    Focus
+    <input type="text" name="focus-text" onfocus="focusMe()" />
+  </p>
+ 
+  //Aqui no "onblur" ele chama a funçao quando a pessoa clica fora do campo de maneira. que des-seleciona o campo em questão.
+  <p>
+    Blur
+    <input type="text" name="blur-text" onblur="blurMe()" />
+  </p>
+  //Aqui no "onchange" ele chama a funçao quando a altera os valores no campo.
+  <p>
+    Change
+    <input type="text" name="change-text" onchange="changeMe()" />
+  </p>
+  //Aqui no "onmouseover" ele chama a funçao quando o mouse passa por cima do campo.
+  <p onmouseover="overMe()">Passe o mouse sobre mim!</p>
+</body>
+</html>
