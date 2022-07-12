@@ -1,6 +1,25 @@
 let list = {
     
 }
-function Lista () {
+function saveHouse () {
+    let area =document.querySelector("input[name='number']").value
+    let district =document.querySelector("input[name='district']").value
+    let city =document.querySelector("input[name='city']").value
+    let number =document.querySelector("input[name='area']").value
 
+    let newListValue = document.createElement("li")
+    newListValue.innerText = area + "m², número " + number + " ( " + district +" - "+ city +" )"
+
+    let removeButton = document.createElement ("button")
+    removeButton.type = "button"
+    removeButton.innerText = "Remover"
+    removeButton.setAttribute("onclick" , "removeHouse(this)")
+
+    newListValue.appendChild (removeButton)
+
+    document.getElementById ("house-list").appendChild(newListValue)
+}
+function removeHouse (button) {
+    let liToRemove = button.parentNode
+    document.getElementById("house-list").removeChild(liToRemove)
 }

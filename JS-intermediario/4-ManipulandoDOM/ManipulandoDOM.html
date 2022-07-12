@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,23 +8,32 @@
     <script src="ManipulandoDOM.js"></script>
     <title>Lista de Casas</title>
 </head>
+
 <body>
     <h1>Lista de Casas</h1>
-    <p>
+    <form>
+
         <h2>Informe os dados da residência</h2>
-        <br>
-        <label>Número da residência </label>
-        <input type="text" id="number">
-        <br>
-        <label>Bairro </label>
-        <input type="text" id="district">
-        <br>
-        <label>Cidade </label>
-        <input type="text" id="city">
-        <br>
-        <label>Área da casa </label>
-        <input type="text" id="area">
-    </p>
-    
+
+        <p>
+            <label>Número da residência </label>
+            <input type="text" name="number">
+        </p>
+        <p>
+            <label>Bairro </label>
+            <input type="text" name="district">
+        </p>
+        <p>
+            <label>Cidade </label>
+            <input type="text" name="city">
+        </p>
+        <p>
+            <label>Área da casa </label>
+            <input type="text" name="area">
+        </p>
+        <button onclick= "saveHouse()" type="button">Salvar</button>
+    </form>
+    <ul id="house-list"></ul>  
 </body>
+
 </html>

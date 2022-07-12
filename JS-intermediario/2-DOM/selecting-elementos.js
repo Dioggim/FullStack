@@ -7,10 +7,11 @@ function show1(){
     console.log(elements[1].value)
 }
 function show2(){
-    let elements = document.querySelectorAll("div#phones input[name = 'phone'")
+    let elements = document.querySelectorAll("div#phones input[name = 'phone']")
     console.log(elements[1].value)
 }
 function show3(){
     let elements = document.getElementsByTagName("input")
     console.log(elements)
 }
+ 
